@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  MessagesViewController.swift
 //  TabBarApp
 //
 //  Created by Максим Бутин on 04.11.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class MessagesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

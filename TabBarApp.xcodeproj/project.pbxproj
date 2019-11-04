@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50950664236AFEFA006E941C /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50950663236AFEFA006E941C /* TicketViewController.swift */; };
+		5032B646236FFF9000C54857 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5032B645236FFF9000C54857 /* SettingsViewController.swift */; };
+		50950664236AFEFA006E941C /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50950663236AFEFA006E941C /* OrdersViewController.swift */; };
 		50BDE92A236AE9F3009DF013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE929236AE9F3009DF013 /* AppDelegate.swift */; };
 		50BDE92C236AE9F3009DF013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE92B236AE9F3009DF013 /* SceneDelegate.swift */; };
-		50BDE92E236AE9F3009DF013 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE92D236AE9F3009DF013 /* MovieViewController.swift */; };
-		50BDE930236AE9F3009DF013 /* SoonMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE92F236AE9F3009DF013 /* SoonMovieViewController.swift */; };
+		50BDE92E236AE9F3009DF013 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE92D236AE9F3009DF013 /* MoviesViewController.swift */; };
+		50BDE930236AE9F3009DF013 /* SoonMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE92F236AE9F3009DF013 /* SoonMoviesViewController.swift */; };
 		50BDE933236AE9F3009DF013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BDE931236AE9F3009DF013 /* Main.storyboard */; };
 		50BDE935236AE9F5009DF013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50BDE934236AE9F5009DF013 /* Assets.xcassets */; };
 		50BDE938236AE9F5009DF013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50BDE936236AE9F5009DF013 /* LaunchScreen.storyboard */; };
@@ -19,8 +20,9 @@
 		50BDE94E236AE9F5009DF013 /* TabBarAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE94D236AE9F5009DF013 /* TabBarAppUITests.swift */; };
 		50BDE95E236AEC2F009DF013 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE95D236AEC2F009DF013 /* MasterViewController.swift */; };
 		50BDE960236AF1F9009DF013 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE95F236AF1F9009DF013 /* LoginViewController.swift */; };
-		50BDE962236AF206009DF013 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE961236AF206009DF013 /* MessageViewController.swift */; };
-		50BDE964236AF218009DF013 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE963236AF218009DF013 /* SettingsViewController.swift */; };
+		50BDE964236AF218009DF013 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BDE963236AF218009DF013 /* MoreViewController.swift */; };
+		50FA01F5237011D10039602E /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA01F4237011D10039602E /* RulesViewController.swift */; };
+		50FA01F7237012640039602E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FA01F6237012640039602E /* MessagesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,12 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		50950663236AFEFA006E941C /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		5032B645236FFF9000C54857 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		50950663236AFEFA006E941C /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		50BDE926236AE9F3009DF013 /* TabBarApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBarApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50BDE929236AE9F3009DF013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50BDE92B236AE9F3009DF013 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		50BDE92D236AE9F3009DF013 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
-		50BDE92F236AE9F3009DF013 /* SoonMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoonMovieViewController.swift; sourceTree = "<group>"; };
+		50BDE92D236AE9F3009DF013 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		50BDE92F236AE9F3009DF013 /* SoonMoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoonMoviesViewController.swift; sourceTree = "<group>"; };
 		50BDE932236AE9F3009DF013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50BDE934236AE9F5009DF013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50BDE937236AE9F5009DF013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,8 +62,9 @@
 		50BDE94F236AE9F5009DF013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50BDE95D236AEC2F009DF013 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		50BDE95F236AF1F9009DF013 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		50BDE961236AF206009DF013 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
-		50BDE963236AF218009DF013 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		50BDE963236AF218009DF013 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		50FA01F4237011D10039602E /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		50FA01F6237012640039602E /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,12 +163,14 @@
 		50BDE967236AF315009DF013 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				50BDE92D236AE9F3009DF013 /* MovieViewController.swift */,
-				50BDE92F236AE9F3009DF013 /* SoonMovieViewController.swift */,
+				50BDE92D236AE9F3009DF013 /* MoviesViewController.swift */,
+				50BDE92F236AE9F3009DF013 /* SoonMoviesViewController.swift */,
 				50BDE95F236AF1F9009DF013 /* LoginViewController.swift */,
-				50BDE961236AF206009DF013 /* MessageViewController.swift */,
-				50BDE963236AF218009DF013 /* SettingsViewController.swift */,
-				50950663236AFEFA006E941C /* TicketViewController.swift */,
+				5032B645236FFF9000C54857 /* SettingsViewController.swift */,
+				50FA01F4237011D10039602E /* RulesViewController.swift */,
+				50950663236AFEFA006E941C /* OrdersViewController.swift */,
+				50FA01F6237012640039602E /* MessagesViewController.swift */,
+				50BDE963236AF218009DF013 /* MoreViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,13 +317,15 @@
 			files = (
 				50BDE960236AF1F9009DF013 /* LoginViewController.swift in Sources */,
 				50BDE95E236AEC2F009DF013 /* MasterViewController.swift in Sources */,
-				50BDE930236AE9F3009DF013 /* SoonMovieViewController.swift in Sources */,
-				50BDE92E236AE9F3009DF013 /* MovieViewController.swift in Sources */,
+				50BDE930236AE9F3009DF013 /* SoonMoviesViewController.swift in Sources */,
+				5032B646236FFF9000C54857 /* SettingsViewController.swift in Sources */,
+				50BDE92E236AE9F3009DF013 /* MoviesViewController.swift in Sources */,
 				50BDE92A236AE9F3009DF013 /* AppDelegate.swift in Sources */,
+				50FA01F7237012640039602E /* MessagesViewController.swift in Sources */,
 				50BDE92C236AE9F3009DF013 /* SceneDelegate.swift in Sources */,
-				50BDE962236AF206009DF013 /* MessageViewController.swift in Sources */,
-				50BDE964236AF218009DF013 /* SettingsViewController.swift in Sources */,
-				50950664236AFEFA006E941C /* TicketViewController.swift in Sources */,
+				50BDE964236AF218009DF013 /* MoreViewController.swift in Sources */,
+				50FA01F5237011D10039602E /* RulesViewController.swift in Sources */,
+				50950664236AFEFA006E941C /* OrdersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

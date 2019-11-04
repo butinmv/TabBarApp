@@ -10,35 +10,69 @@ import UIKit
 
 class MasterViewController: UITabBarController {
     
-    var movieViewController: MovieViewController!
-    var soonMovieViewController: SoonMovieViewController!
-    var loginViewController: LoginViewController!
-    var messagesViewController: MessageViewController!
-    var ticketsViewController: TicketViewController!
-    var settingsViewController: SettingsViewController!
-
+    // MARK: - Properties
+    lazy var loginViewController: LoginViewController = {
+        return instantiateViewController(withStoryboardName: "Main", withIdentifier: "LoginViewController") as! LoginViewController
+    }()
     
+    lazy var settingViewController: SettingsViewController = {
+        return instantiateViewController(withStoryboardName: "Main", withIdentifier: "SettingsViewController") as! SettingsViewController
+    }()
+    
+    lazy var rulesViewController: RulesViewController = {
+        return instantiateViewController(withStoryboardName: "Main", withIdentifier: "RulesViewController") as! RulesViewController
+    }()
+    
+    lazy var ordersViewController: OrdersViewController = {
+        return instantiateViewController(withStoryboardName: "Main", withIdentifier: "OrdersViewController") as! OrdersViewController
+    }()
+    
+    lazy var messageViewController: MessagesViewController = {
+        return instantiateViewController(withStoryboardName: "Main", withIdentifier: "MessagesViewController") as! MessagesViewController
+    }()
+    
+    lazy var moreViewController: MoreViewController = {
+        return instantiateViewController(withStoryboardName: "Main", withIdentifier: "MoreViewController") as! MoreViewController
+    }()
+    
+    // MARK: - Method for instantiate view controller
+    private func instantiateViewController(withStoryboardName storyboard: String, withIdentifier identifier: String) -> UIViewController {
+        let storyboard = UIStoryboard(name: storyboard, bundle: Bundle.main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
+        
+        return viewController
+    }
+    
+    // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureTabBarController()
+        configureTabBarController(authoriazation: false)
     }
     
-    func configureTabBarController() {
+    // MARK: - Configure tab bar controller
+    private func configureTabBarController(authoriazation: Bool) {
         
-        
-        let movieVC = MovieViewController()
-        let soonMovieVC = SoonMovieViewController()
-        let loginVC = LoginViewController()
-        let messagesVC = MessageViewController()
-        // let ticketsVC = TicketViewController()
-        let settingsVC = SettingsViewController()
-        
-        tabBarController?.viewControllers = [movieVC, soonMovieVC, loginVC, messagesVC, settingsVC]
-        tabBarController?.selectedViewController = loginVC
-        
-        
-    }
-    
-    
+        if !authoriazation {
+            loginViewController.tabBarItem = UITabBarItem(title: "Login", image: #imageLiteral(resourceName: "login"), tag: 2)
+            viewControllers?.insert(loginViewController, at: 2)
+            
+            settingViewController.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "Settings"), tag: 3)
+            viewControllers?.insert(settingViewController, at: 3)
+            
+            rulesViewController.tabBarItem = UITabBarItem(title: "Rules", image: #imageLiteral(resourceName: "rules"), tag: 4)
+            viewControllers?.insert(rulesViewController, at: 4)
 
+        } else {
+            ordersViewController.tabBarItem = UITabBarItem(title: "Orders", image: #imageLiteral(resourceName: "Tickets"), tag: 2)
+            viewControllers?.insert(ordersViewController, at: 2)
+            
+            messageViewController.tabBarItem = UITabBarItem(title: "Messages", image: #imageLiteral(resourceName: "mail"), tag: 3)
+            viewControllers?.insert(messageViewController, at: 3)
+            
+            moreViewController.tabBarItem = UITabBarItem(title: "More", image: #imageLiteral(resourceName: "more"), tag: 4)
+            viewControllers?.insert(moreViewController, at: 4)
+            
+            tabBarController?.selectedViewController = ordersViewController
+        }
+    }
 }

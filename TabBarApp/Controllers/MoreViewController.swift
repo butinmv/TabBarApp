@@ -1,5 +1,5 @@
 //
-//  TicketViewController.swift
+//  SettingsViewController.swift
 //  TabBarApp
 //
 //  Created by Максим Бутин on 31.10.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TicketViewController: UIViewController {
+class MoreViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
