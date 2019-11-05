@@ -14,10 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = MasterViewController()
-        window?.makeKeyAndVisible()
+        
+        //let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        //let masterViewController = storyboard.instantiateViewController(withIdentifier: "MasterViewController") as! MasterViewController
+        
+        self.window?.makeKeyAndVisible()
+        self.window?.rootViewController = MasterViewController()
         
         return true
     }
@@ -38,12 +40,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
-extension AppDelegate {
-    static var shared: AppDelegate {
-        return UIApplication.shared.delegate as! AppDelegate
-    }
-    
-    var rootViewController: MasterViewController {
-        return window!.rootViewController as! MasterViewController
-    }
-}
+//extension AppDelegate {
+//    static var shared: AppDelegate {
+//        return UIApplication.shared.delegate as! AppDelegate
+//    }
+//
+//    var rootViewController: UITabBarController {
+//        return window!.rootViewController as! UITabBarController
+//    }
+//}

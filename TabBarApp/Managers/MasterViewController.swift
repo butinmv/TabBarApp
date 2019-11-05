@@ -51,17 +51,18 @@ class MasterViewController: UITabBarController {
     
     // MARK: - Configure tab bar controller
     private func configureTabBarController(authoriazation: Bool) {
-        
         if !authoriazation {
             loginViewController.tabBarItem = UITabBarItem(title: "Login", image: #imageLiteral(resourceName: "login"), tag: 2)
             viewControllers?.insert(loginViewController, at: 2)
+            
             
             settingViewController.tabBarItem = UITabBarItem(title: "Settings", image: #imageLiteral(resourceName: "Settings"), tag: 3)
             viewControllers?.insert(settingViewController, at: 3)
             
             rulesViewController.tabBarItem = UITabBarItem(title: "Rules", image: #imageLiteral(resourceName: "rules"), tag: 4)
             viewControllers?.insert(rulesViewController, at: 4)
-
+            
+            self.selectedViewController = loginViewController
         } else {
             ordersViewController.tabBarItem = UITabBarItem(title: "Orders", image: #imageLiteral(resourceName: "Tickets"), tag: 2)
             viewControllers?.insert(ordersViewController, at: 2)
@@ -72,7 +73,7 @@ class MasterViewController: UITabBarController {
             moreViewController.tabBarItem = UITabBarItem(title: "More", image: #imageLiteral(resourceName: "more"), tag: 4)
             viewControllers?.insert(moreViewController, at: 4)
             
-            tabBarController?.selectedViewController = ordersViewController
+            self.selectedViewController = ordersViewController
         }
     }
 }
